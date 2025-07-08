@@ -36,6 +36,8 @@ defmodule BookTracker.Library do
 
   """
   def get_book!(id), do: Repo.get!(Book, id)
+  def get_book(id), do: Repo.get(Book, id)
+
 
   @doc """
   Creates a book.
